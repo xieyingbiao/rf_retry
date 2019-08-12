@@ -35,3 +35,4 @@ comm3='''rebot -d '''+logdir+''' -R --splitlog -x outputxunit.xml '''+log1dir+''
 comm4='''rebot -d '''+logdir+''' -R --splitlog -o output.xml -x outputxunit.xml '''+log1dir+''' '''+log2dir+''''''
 file_object.writelines(all_comm.format(comm1,comm2,comm3,comm4))
 file_object.close()
+#python retry_run.py -o log/$(BUILD.BUILDID) -i $(run_tag) -e NO -l None -r None -P lib suites
